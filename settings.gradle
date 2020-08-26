@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':testartifactorylibrary'
 rootProject.name='My Application'
