@@ -8,7 +8,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath 'com.android.tools.build:gradle:3.4.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
      classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4+"
         // NOTE: Do not place your application dependencies here; they belong
@@ -20,7 +20,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "http://localhost:8081/artifactory/gradle-dev" }
+        maven { url "http://localhost:8081/artifactory/release_sdk" }
     }
 
     apply plugin: "com.jfrog.artifactory"

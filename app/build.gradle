@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -30,10 +28,8 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation project(path: ':testartifactorylibrary')
-//    testImplementation 'junit:junit:4.12'
-//    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
-//    implementation 'com.imobpay.artifactorylibrary:testartifactorylibrary:1.1.0-SNAPSHOT'
+
+//    implementation 'com.plum.testartifactorylibrary:testartifactorylibrary:1.1.0-SNAPSHOT'
 
 }

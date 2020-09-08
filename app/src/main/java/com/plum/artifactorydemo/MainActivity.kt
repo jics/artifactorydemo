@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val tv_hello = findViewById(R.id.tv_hello) as TextView
         tv_hello.setOnClickListener() { v ->
-            Toast.makeText(this@MainActivity, "testclick", Toast.LENGTH_LONG)
+            Toast.makeText(this@MainActivity, "testclick", Toast.LENGTH_LONG).show()
             startActivity(Intent(this@MainActivity, HomeActivity::class.java))
 
         }
