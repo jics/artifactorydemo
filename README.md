@@ -38,8 +38,8 @@ Administration -> Security -> Security onfiguration
 
 
 
-
-##三、Artifatory 本地仓库创建
+ 
+## 三、Artifatory 本地仓库创建
 登陆到web服务台后，就可以创建相关的仓库了。仓库分为，本地Local型，远程Remote型，以及虚拟型。
 
 * 本地私有仓库：用于内部使用，上传的组件不会向外部进行同步。
