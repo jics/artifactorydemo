@@ -1,10 +1,10 @@
-#搭建本地maven仓库
+# 搭建本地maven仓库
 
 
-##一、Jfrog Artifactory简介
+## 一、Jfrog Artifactory简介
 Jfrog Artifactory是一款二进制存储管理工具，用来管理构建工具(如：maven、gradle)等所依赖的二进制仓库，以方便管理第三方库和发布目标版本库，从而提高软件开发效率。它提供大量的插件以利于和不同工具之间的整合，内部使用权限管理更加安全，并支持高并发等等特性。
 
-##二、Artifactory的构建
+## 二、Artifactory的构建
 
 搭建Artifactory私服的主要目的，是作为团队内所使用公共组件模块仓库。将Maven构件(jar和pom)存储到一个专门的Maven仓库，使用时通过Gradle选择版本，构建应用。
 
@@ -18,7 +18,7 @@ Artifactory软件下载地址：
   <http://localhost:8081/artifactory/>
 
 默认登陆账户 admin  密码 password
-![artifactory主页](picture/001.png)
+![artifactory主页](./picture/001.png)
 
 Artifactory 安装包里集成了tomcat，所以不需要再单独安装。默认的端口是8081，修改启动端口，可修改server.xml文件中的端口
 > /tomcat/conf/server.xml
@@ -60,7 +60,7 @@ Administration -> Security -> Security onfiguration
 
 
 
-##四、仓库文件上传
+## 四、仓库文件上传
 demo项目 <https://github.com/jics/artifactorydemo>
 
 创建demo项目与相关library,配置相关文件，编译完成aar文件上传。
@@ -90,7 +90,7 @@ demo项目 <https://github.com/jics/artifactorydemo>
 
 
 
-##五、gradle应用仓库文件
+## 五、gradle应用仓库文件
 * 1、 Project 中 build.gradle中添加配置
 
 ![仓库使用01](picture/014.png)
@@ -100,7 +100,7 @@ demo项目 <https://github.com/jics/artifactorydemo>
 
 * 3、编译工程，并验证。
 
-##六、第三方仓库引用注意点：
+## 六、第三方仓库引用注意点：
 * 1、保持所使用仓库版本最新可如下配置 
      
  > compile 'com.tencent.bugly:nativecrashreport:latest.integration'
@@ -116,7 +116,7 @@ Normally, Gradle will still cache changing modules for a 24 hour period. You can
                  }
 
  
-##七、扩展补充内容
+## 七、扩展补充内容
 - 1、https://blog.csdn.net/lu_xin_/article/details/51134849
 - 2、 为什么选择 artifactory  https://jfrog.com/blog/artifactory-vs-nexus-integration-matrix/
 - 3、https://yangbo.tech/2017/01/19/2017-01-19-distribute-android-library-to-local-jCenter/
