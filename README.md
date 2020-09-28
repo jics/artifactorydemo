@@ -1,4 +1,4 @@
-# 搭建本地maven仓库
+# Artifactory搭建本地maven仓库
 
 
 ## 一、Jfrog Artifactory简介
@@ -96,14 +96,14 @@ demo项目 <https://github.com/jics/artifactorydemo>
 ![仓库使用01](picture/014.png)
 * 2、app Moudle中 build.gradle中添加配置
  
-![仓库使用02](picture/015.png)
+![仓库使用02](picture/016.png)
 
 * 3、编译工程，并验证。
 
 ## 六、第三方仓库引用注意点：
 * 1、保持所使用仓库版本最新可如下配置 
      
- > compile 'com.tencent.bugly:nativecrashreport:latest.integration'
+ > implementation 'com.tencent.bugly:nativecrashreport:latest.integration'
          
 latest.integration  resolves to latest snapshot or release, whichever is newer. There is no symbolic version for latest snapshot only (use 1.2.3-SNAPSHOT).
 
